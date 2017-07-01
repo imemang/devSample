@@ -7,7 +7,6 @@
 <title>sample Pages</title>
 </head>
 <body>
-index Page
-TEST!!!
+index
 </body>
 </html>
