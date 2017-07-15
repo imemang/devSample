@@ -2,18 +2,20 @@ package kej.spring.sample.test.controller;
 
 import java.util.Map;
 
+
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+@RequestMapping("/test")
 @Controller
 public class TestController {
 	Logger log = Logger.getLogger(this.getClass());
 	
-	@RequestMapping(value="/test/openSampleList.do")
+	@RequestMapping(value="/intercepter.do")
     public ModelAndView openSampleList(Map<String,Object> commandMap) throws Exception{
-        ModelAndView mv = new ModelAndView("");
+        ModelAndView mv = new ModelAndView("test/intercepter");
         log.debug("인터셉터 테스트");
          
         return mv;
