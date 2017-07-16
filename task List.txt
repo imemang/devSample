@@ -1,5 +1,8 @@
 [20170701]	웹서비스 샘플 프로젝트 생성
 			인터셉터 설정
-[20170713]  AWS 서버 설정			
-[20170715]  1. 홈페이지 layout 설정
+[20170713] 	AWS 서버 설정			
+[20170715]	1. 홈페이지 layout 설정
 			2. sample, project 메뉴 페이지 샘플 제작
+[20170717]	project > ticketting
+	1. captcha 출력 servlet 적용
+		

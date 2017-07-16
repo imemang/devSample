@@ -48,5 +48,17 @@
 		<servlet-name>action</servlet-name>
 		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
+	
+	<!-- captcha -->	
+	<servlet>
+	    <display-name>CaptchaGenServlet</display-name>
+	    <servlet-name>CaptchaGenServlet</servlet-name>
+	    <servlet-class>kej.spring.sample.captchaServlet.CaptchaGenServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+    	<servlet-name>CaptchaGenServlet</servlet-name>
+    	<url-pattern>/captcha</url-pattern>
+	</servlet-mapping>
 
 </web-app>
