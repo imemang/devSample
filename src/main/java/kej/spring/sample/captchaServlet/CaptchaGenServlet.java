@@ -55,7 +55,7 @@ public class CaptchaGenServlet extends HttpServlet {
 			request.getSession().setAttribute("CAPTCHA", randomString);
 			request.setAttribute("CHA", randomString);
 			
-			Font font = new Font("Helvetica 67 Medium Condensed", Font.ITALIC, 18);
+			Font font = new Font("verdana", Font.ITALIC, 18);
 			FontRenderContext frc = new FontRenderContext(null, true, true);
 			Rectangle2D bounds = font.getStringBounds(randomString, frc);
 			int w = (int) bounds.getWidth();
@@ -64,9 +64,9 @@ public class CaptchaGenServlet extends HttpServlet {
 			// 이미지 생성
 			BufferedImage image = new BufferedImage(w, h, BufferedImage.TYPE_INT_RGB);
 			Graphics2D g = (Graphics2D) image.getGraphics();
-			g.setColor(Color.WHITE);
+			g.setColor(new Color(31, 74, 92));
 			g.fillRect(0, 0, w, h);
-			g.setColor(new Color(0, 0, 0));
+			g.setColor(new Color(232, 191, 0));
 			g.setFont(font);
 			g.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
 			g.setRenderingHint(RenderingHints.KEY_FRACTIONALMETRICS, RenderingHints.VALUE_FRACTIONALMETRICS_ON);

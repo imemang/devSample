@@ -5,4 +5,5 @@
 			2. sample, project 메뉴 페이지 샘플 제작
 [20170717]	project > ticketting
 	1. captcha 출력 servlet 적용
-		
+	2. dialog 적용 확인 로직 작성	
+	3. ticketting 로직 작성 - 시간 출력까지

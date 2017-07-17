@@ -34,7 +34,7 @@ $(function() {
 						</a>
 				</li>
 				<li class="project">
-					<a href="${contextPath}/project/ticketting.do">
+					<a href="${contextPath}/project/ticketting/ticketting.do">
 						<span>PROJECT</span>
 						<span class="arr"></span>
 					</a>

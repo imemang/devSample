@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+
+.nodisp	{display: none;}
+.center	{text-align: center;}
+.errTxt {
+	color: red;
+	font-size: 8pt;
+}
