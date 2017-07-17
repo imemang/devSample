@@ -59,7 +59,6 @@ $(function() {
 	});
 	
 	$("#btnCheck").on("click", function(){
-		alert(1);
 		var url = "${contextPath}/project/ticketting/captcha.do";
 		var captchaInputVal = $("[name='captchaInput']").val().toUpperCase();
 
