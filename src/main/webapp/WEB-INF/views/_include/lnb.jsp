@@ -19,11 +19,15 @@
 			</c:when>
 			<c:when test="${menu1 =='project'}">	
 				<li>
-					<a>
-						<spen>티켓팅프로젝트</spen>
-					</a>
+					<a href="${contextPath}/project/ticketting/main.do">
+                        <span>티켓팅프로젝트</span>
+                    </a>
 				</li>
-			
+				<li>
+                    <a href="${contextPath}/project/datepicker/main.do">
+                        <span>DATEPICKER</span>
+                    </a>
+                </li>
 			</c:when>
 			<c:when test="${menu1 =='portfolio'}">	
 			

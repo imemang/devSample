@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class TickettingController {
 
-	@RequestMapping(value="/project/ticketting/ticketting.do")
+	@RequestMapping(value="/project/ticketting/main.do")
 	public String ticketting(HttpSession session, ModelMap model) throws Exception{
 		
 		model.addAttribute("menu1", "project");
