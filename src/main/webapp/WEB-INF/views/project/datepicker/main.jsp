@@ -5,7 +5,9 @@
 
 <script type="text/javascript">
 $(function() {
-
+	
+	$( ".date" ).datepicker();
+	
 });
 </script>		
 
@@ -22,7 +24,14 @@ $(function() {
 			<div class="scontent">
 				<!-- scon -->
 				<div class="scon">
-                    datepicker main
+				    <p>
+                        <input type="radio" value="monthly" name="period"/> 월간
+                        <input type="radio" value="weekly" name="period"/> 주간
+                        <input type="radio" value="daily" name="period"/> 일간
+                    </p>
+                    <p>start date : <input type="text" id="s_datepicker" class="date"></p>
+                    <p> end  date : <input type="text" id="e_datepicker" class="date"></p>
+                    
 				</div>
 				<!-- //scon -->
 			</div>
